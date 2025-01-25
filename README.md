@@ -2,13 +2,13 @@
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: [SATORI]
 
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Member 1: [sarova] - [mbc]
+- Member 2: [alna] - [mbc]
+- Member 3: [gowry] - [mbc]
 
 ### Hosted Project Link
 [mention your project hosted project link here]
@@ -25,18 +25,14 @@
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- Html
+- java
+- react
+- css
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
 
 ### Implementation
-For Software:
+For Software: Vscode
 # Installation
 [commands]
 
@@ -91,9 +87,9 @@ For Hardware:
 [Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- [alna]: [created idea]
+- [gowry]: [created code]
+- [sarova]: [design and colour]
 
 ---
 Made with ❤️ at TinkerHub
