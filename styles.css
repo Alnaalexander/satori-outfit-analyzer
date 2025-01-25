@@ -1,0 +1,132 @@
+:root {
+  --coral-pink-50: #fff1f1;
+  --coral-pink-100: #ffe1e1;
+  --coral-pink-200: #ffc7c7;
+  --coral-pink-300: #ffa0a0;
+  --coral-pink-400: #ff6b6b;
+  --coral-pink-500: #fa4646;
+  --coral-pink-600: #e62e2e;
+  --coral-pink-700: #c11f1f;
+  --coral-pink-800: #a01d1d;
+  --coral-pink-900: #841e1e;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--coral-pink-900);
+  background-color: var(--coral-pink-50);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: var(--coral-pink-700);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--coral-pink-700);
+}
+
+input[type="text"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--coral-pink-300);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus,
+select:focus {
+  outline: none;
+  border-color: var(--coral-pink-500);
+  box-shadow: 0 0 0 2px var(--coral-pink-200);
+}
+
+button {
+  background-color: var(--coral-pink-500);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--coral-pink-600);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+li:hover {
+  color: var(--coral-pink-600);
+}
+
+.analysis-result {
+  margin-top: 20px;
+  font-style: italic;
+}
+

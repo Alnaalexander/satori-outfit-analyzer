@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SATORI - The Outfit Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SATORI</h1>
+        <h2>The Outfit Analyzer</h2>
+        
+        <div class="card">
+            <h3>About SATORI</h3>
+            <p>
+                The <strong>SATORI Website</strong> is a user-friendly application designed to help users create stylish 
+                and coordinated outfits by analyzing their wardrobe. It simplifies outfit planning by allowing users to input 
+                their clothing items and accessories and generating various combinations of outfits.
+            </p>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h3>Generate Outfit Combinations</h3>
+                <form id="outfitForm">
+                    <div class="form-group">
+                        <label for="tops">Enter Tops (comma-separated):</label>
+                        <input type="text" id="tops" placeholder="e.g., Red Shirt, Blue T-Shirt" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pants">Enter Pants (comma-separated):</label>
+                        <input type="text" id="pants" placeholder="e.g., Black Jeans, White Trousers" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="accessories">Enter Accessories (comma-separated):</label>
+                        <input type="text" id="accessories" placeholder="e.g., Watch, Hat, Sunglasses" required>
+                    </div>
+                    <button type="submit">Generate Outfit Suggestions</button>
+                </form>
+            </div>
+
+            <div class="card">
+                <h3>Analyze Your Outfit</h3>
+                <form id="analyzeForm">
+                    <div class="form-group">
+                        <label for="outfitImage">Upload an Image:</label>
+                        <input type="file" id="outfitImage" accept="image/*" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="occasion">Select Occasion:</label>
+                        <select id="occasion" required>
+                            <option value="">--Choose Occasion--</option>
+                            <option value="casual">Casual</option>
+                            <option value="formal">Formal</option>
+                            <option value="date-night">Date Night</option>
+                            <option value="party">Party</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contrast">Contrast Color Option:</label>
+                        <select id="contrast" required>
+                            <option value="">--Choose Contrast--</option>
+                            <option value="high">High Contrast</option>
+                            <option value="low">Low Contrast</option>
+                            <option value="neutral">Neutral</option>
+                        </select>
+                    </div>
+                    <button type="submit">Analyze Outfit</button>
+                </form>
+                <div id="analysisResult" class="analysis-result"></div>
+            </div>
+        </div>
+
+        <div id="suggestedOutfits" class="card" style="display: none;">
+            <h3>Suggested Outfits</h3>
+            <ul id="outfitList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
